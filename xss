@@ -1,0 +1,17 @@
+Exploit Title: Simple Food Website 1.0 : Stored XSS
+
+Date: 26-04-2022
+Exploit Author: Saket Saurav
+Vendor Homepage:
+https://www.sourcecodester.com/php/12510/simple-food-website-php.html
+Software Link: https://www.sourcecodester.com/php/12510/simple-food-website-php.html
+Version: 1.0
+Tested on: Kali Linux 2020
+
+Affected Endpoint: http://127.0.0.1:1234/food/admin/all_users.php
+
+Steps to reproduce the stored XSS.
+
+1. Login as Low Privileged user (Moderator) on :
+2.Then a Moderator needs to enter XSS Payload: <script>alert(document.cookie)</> in Full User Name field. 
+This causes stored xss on the web portal.It can be then used as for privilege escalation from moderator to Admin via cookie stealing
