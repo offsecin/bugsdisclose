@@ -1,0 +1,19 @@
+Exploit Title: Admin Account Takeover using a low privileged user in
+: Rescue Dispatch Management System 1.0
+
+Date: 25-04-2022
+Exploit Author: Saket Saurav
+Vendor Homepage:
+https://www.sourcecodester.com/php/15296/rescue-dispatch-management-system-phpoop-free-source-code.html
+Software Link: https://www.sourcecodester.com/php/15296/rescue-dispatch-management-system-phpoop-free-source-code.html
+Version: 1.0
+Tested on: Kali Linux
+
+Steps To Reproduce:
+1.Login as any low privileged staff user  http://localhost/rdms/admin/login.php
+2.Visit any Admin Endpoint like http://localhost/rdms/admin/?page=user/list
+3. we can see that we can access admin endpoint and change Admin
+password by clicking on ACTION > EDIT > Entering new password for
+Admin
+
+Hence we can takeover Admin Account
